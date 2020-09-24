@@ -1,0 +1,15 @@
+https://github.com/sass/node-sass/issues/1894
+
+https://github.com/sass/node-sass/issues/2022
+
+https://github.com/microsoft/vscode/issues/20491
+
+https://github.com/facebook/create-react-app/issues/2531
+
+https://github.com/michaelwayman/node-sass-chokidar/issues/14
+
+https://github.com/michaelwayman/node-sass-chokidar/issues/22
+
+https://stackoverflow.com/questions/50395998/vscode-wont-work-with-filewatchers
+
+https://qastack.vn/programming/50722133/what-exactly-is-the-react-scripts-start-command
