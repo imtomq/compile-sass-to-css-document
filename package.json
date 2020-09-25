@@ -11,7 +11,7 @@
     "react-scripts": "3.4.3"
   },
   "scripts": {
-    "scss:compile": "node-sass --watch src/assets/scss/main.scss -o src/assets/css/classic.css -w",
+    "scss:compile": "node-sass --watch src/assets/scss/ -o src/assets/css/ -w",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
