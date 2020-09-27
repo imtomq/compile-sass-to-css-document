@@ -68,9 +68,22 @@ Trong phần **Scripts**, chúng ta thêm các lệnh compile SASS sang CSS:
 
 <img src="https://github.com/ImTomQ/Compile-sass-to-css-document/blob/master/src/assets/img/AgqTe.png" width="100%"></img>
 
+Các hộp màu xanh là các tham chiếu đến các tập lệnh, tất cả chúng có thể được thực thi trực tiếp bằng một npm run <script-name>lệnh. Nhưng như bạn có thể thấy, thực tế chỉ có 2 luồng thực tế:
 
+- npm run start
+- npm run build
 
+Các hộp màu xám là các lệnh có thể được thực thi từ dòng lệnh.
 
+Vì vậy, ví dụ, nếu bạn chạy **npm start** (hoặc **npm run start**) thực sự dịch sang **npm-run-all -p watch-css start-js** lệnh, được thực thi từ dòng lệnh.
+
+Trong trường hợp của tôi, tôi có **npm-run-all** lệnh đặc biệt này , đây là một plugin phổ biến tìm kiếm các tập lệnh bắt đầu bằng ***"build:"*** và thực thi tất cả các plugin đó. Tôi thực sự không có bất kỳ mô hình phù hợp với mô hình đó. Nhưng nó cũng có thể được sử dụng để chạy song song nhiều lệnh, được thực hiện ở đây, bằng cách sử dụng công **-p <command1> <command2>** tắc. **Vì vậy, ở đây nó thực thi 2 script, tức là ***watch-css*** và ***start-js*****. (Những đoạn script được đề cập cuối cùng là những người theo dõi thay đổi tập tin và sẽ chỉ hoàn thành khi bị giết.)
+
+- Các **watch-css** đảm bảo rằng các **.scss** tập tin được phiên dịch sang **.css** các file, và ngoại hình để cập nhật trong tương lai.
+
+- Các **start-js** điểm để **react-scripts start** lưu trữ trang web trong chế độ phát triển.
+
+Trong kết luận, **npm start** lệnh có thể cấu hình. Nếu bạn muốn biết nó làm gì, thì bạn phải kiểm tra ***package.json*** tệp. (và bạn có thể muốn tạo một sơ đồ nhỏ khi mọi thứ trở nên phức tạp).
 
 # Tổng hợp những bài viết hướng dẫn fix lỗi
 

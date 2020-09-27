@@ -12,8 +12,8 @@
   },
   "scripts": {
     "start": "npm-run-all -p watch-css start-js",
-    "build-css": "node-sass-chokidar --include-path  ./src --include-path ./node_modules src/assets/scss/main.scss -o src/assets/css/main.css",
-    "watch-css": "npm run build-css && node-sass-chokidar --include-path  ./src --include-path ./node_modules src/assets/scss/main.scss -o src/assets/css/main.css -w -r --usePolling --polling-interval 500",
+    "build-css": "node-sass-chokidar --include-path  ./src --include-path ./node_modules src/assets/scss/main.scss -o src/assets/css/",
+    "watch-css": "npm run build-css && node-sass-chokidar --include-path  ./src --include-path ./node_modules src/assets/scss/main.scss -o src/assets/css/ -w -r --usePolling --polling-interval 500",
     "start-js": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
