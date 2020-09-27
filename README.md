@@ -64,43 +64,43 @@ Trong phần **Scripts**, chúng ta thêm các lệnh compile SASS sang CSS:
 
 Để hiểu hơn về [node-sass-chokidar](https://www.npmjs.com/package/node-sass-chokidar).
 
-## Tìm hiểu lệnh React-scripts start
+## Tìm hiểu lệnh React-scripts start và luồng chạy
 
 <img src="https://github.com/ImTomQ/Compile-sass-to-css-document/blob/master/src/assets/img/AgqTe.png" width="100%"></img>
 
-Các hộp màu xanh là các tham chiếu đến các tập lệnh, tất cả chúng có thể được thực thi trực tiếp bằng một npm run <script-name>lệnh. Nhưng như bạn có thể thấy, thực tế chỉ có 2 luồng thực tế:
+Các hộp màu xanh là các tham chiếu đến các tập lệnh, tất cả chúng có thể được thực thi trực tiếp bằng một **npm run <script-name>** lệnh. Nhưng như bạn có thể thấy, thực tế chỉ có 2 luồng thực tế:
 
-- npm run start
-- npm run build
+- **npm run start**
+- **npm run build**
 
 Các hộp màu xám là các lệnh có thể được thực thi từ dòng lệnh.
 
 Vì vậy, ví dụ, nếu bạn chạy **npm start** (hoặc **npm run start**) thực sự dịch sang **npm-run-all -p watch-css start-js** lệnh, được thực thi từ dòng lệnh.
 
-Trong trường hợp của tôi, tôi có **npm-run-all** lệnh đặc biệt này , đây là một plugin phổ biến tìm kiếm các tập lệnh bắt đầu bằng ***"build:"*** và thực thi tất cả các plugin đó. Tôi thực sự không có bất kỳ mô hình phù hợp với mô hình đó. Nhưng nó cũng có thể được sử dụng để chạy song song nhiều lệnh, được thực hiện ở đây, bằng cách sử dụng công **-p <command1> <command2>** tắc. **Vì vậy, ở đây nó thực thi 2 script, tức là ***watch-css*** và ***start-js*****. (Những đoạn script được đề cập cuối cùng là những người theo dõi thay đổi tập tin và sẽ chỉ hoàn thành khi bị giết.)
+Trong trường hợp của tôi, tôi có **npm-run-all** lệnh đặc biệt này , đây là một plugin phổ biến tìm kiếm các tập lệnh bắt đầu bằng ***"build:"*** và thực thi tất cả các plugin đó. Nó cũng có thể được sử dụng để chạy song song nhiều lệnh, được thực hiện ở đây, bằng cách sử dụng công **-p <command1> <command2>** tắc. **Vì vậy, ở đây nó thực thi 2 script, tức là ***watch-css*** và ***start-js*****.
 
 - Các **watch-css** đảm bảo rằng các **.scss** tập tin được phiên dịch sang **.css** các file, và ngoại hình để cập nhật trong tương lai.
 
 - Các **start-js** điểm để **react-scripts start** lưu trữ trang web trong chế độ phát triển.
 
-Trong kết luận, **npm start** lệnh có thể cấu hình. Nếu bạn muốn biết nó làm gì, thì bạn phải kiểm tra ***package.json*** tệp. (và bạn có thể muốn tạo một sơ đồ nhỏ khi mọi thứ trở nên phức tạp).
+Kết luận, **npm start** lệnh có thể cấu hình. Nếu bạn muốn biết nó làm gì, thì bạn phải kiểm tra ***package.json*** tệp. (và bạn có thể muốn tạo một sơ đồ nhỏ khi mọi thứ trở nên phức tạp).
+
+[Bài viết gốc](https://qastack.vn/programming/50722133/what-exactly-is-the-react-scripts-start-command)
 
 # Tổng hợp những bài viết hướng dẫn fix lỗi
 
 [Fix 'unreadable file error' in watch mode after a save in vscode](https://github.com/marcosbozzani/node-sass/blob/bug-vscode-watch/lib/render.js).
 
-https://github.com/sass/node-sass/issues/1894
+[File to read not found or unreadable" with -w under Windows](https://github.com/sass/node-sass/issues/1894)
 
-https://github.com/sass/node-sass/issues/2022
+[Compile sass Error: File to read not found or unreadable](https://github.com/sass/node-sass/issues/2022)
 
-https://github.com/microsoft/vscode/issues/20491
+["File to read not found or unreadable" using node-sass when saving on VSCode](https://github.com/microsoft/vscode/issues/20491)
 
-https://github.com/facebook/create-react-app/issues/2531
+[I am not able to run SASS](https://github.com/facebook/create-react-app/issues/2531)
 
-https://github.com/michaelwayman/node-sass-chokidar/issues/14
+[I am not able to run SASS into my create-react-app](https://github.com/michaelwayman/node-sass-chokidar/issues/14)
 
-https://github.com/michaelwayman/node-sass-chokidar/issues/22
+[change files throw error status 3](https://github.com/michaelwayman/node-sass-chokidar/issues/22)
 
-https://stackoverflow.com/questions/50395998/vscode-wont-work-with-filewatchers
-
-https://qastack.vn/programming/50722133/what-exactly-is-the-react-scripts-start-command
+[VSCode won't work with filewatchers](https://stackoverflow.com/questions/50395998/vscode-wont-work-with-filewatchers)
