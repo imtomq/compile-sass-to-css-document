@@ -68,7 +68,7 @@ Trong phần **Scripts**, chúng ta thêm các lệnh compile SASS sang CSS:
 
 <img src="https://github.com/ImTomQ/Compile-sass-to-css-document/blob/master/src/assets/img/AgqTe.png" width="100%"></img>
 
-Các hộp màu xanh là các tham chiếu đến các tập lệnh, tất cả chúng có thể được thực thi trực tiếp bằng một **npm run <script-name>** lệnh. Nhưng như bạn có thể thấy, thực tế chỉ có 2 luồng thực tế:
+Các hộp màu xanh là các tham chiếu đến các tập lệnh, tất cả chúng có thể được thực thi trực tiếp bằng một **npm run < script-name >** lệnh. Nhưng như bạn có thể thấy, thực tế chỉ có 2 luồng thực tế:
 
 - **npm run start**
 - **npm run build**
