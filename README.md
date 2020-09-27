@@ -62,9 +62,11 @@ Trong phần **Scripts**, chúng ta thêm các lệnh compile SASS sang CSS:
 }
 ```
 
+Để hiểu hơn về [node-sass-chokidar](https://www.npmjs.com/package/node-sass-chokidar).
 
+## Tìm hiểu lệnh React-scripts start
 
-
+![alt text](https://github.com/ImTomQ/Compile-sass-to-css-document/tree/master/src/assets/img/AgqTe.png)
 
 
 
@@ -73,7 +75,7 @@ Trong phần **Scripts**, chúng ta thêm các lệnh compile SASS sang CSS:
 
 # Tổng hợp những bài viết hướng dẫn fix lỗi
 
-[Fix 'unreadable file error' in watch mode after a save in vscode](https://github.com/marcosbozzani/node-sass/blob/bug-vscode-watch/lib/render.js)
+[Fix 'unreadable file error' in watch mode after a save in vscode](https://github.com/marcosbozzani/node-sass/blob/bug-vscode-watch/lib/render.js).
 
 https://github.com/sass/node-sass/issues/1894
 
