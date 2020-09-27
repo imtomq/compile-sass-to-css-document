@@ -91,16 +91,16 @@ Kết luận, **npm start** lệnh có thể cấu hình. Nếu bạn muốn bi�
 
 [Fix 'unreadable file error' in watch mode after a save in vscode](https://github.com/marcosbozzani/node-sass/blob/bug-vscode-watch/lib/render.js).
 
-[File to read not found or unreadable" with -w under Windows](https://github.com/sass/node-sass/issues/1894)
+[File to read not found or unreadable" with -w under Windows](https://github.com/sass/node-sass/issues/1894).
 
-[Compile sass Error: File to read not found or unreadable](https://github.com/sass/node-sass/issues/2022)
+[Compile sass Error: File to read not found or unreadable](https://github.com/sass/node-sass/issues/2022).
 
-["File to read not found or unreadable" using node-sass when saving on VSCode](https://github.com/microsoft/vscode/issues/20491)
+["File to read not found or unreadable" using node-sass when saving on VSCode](https://github.com/microsoft/vscode/issues/20491).
 
-[I am not able to run SASS](https://github.com/facebook/create-react-app/issues/2531)
+[I am not able to run SASS](https://github.com/facebook/create-react-app/issues/2531).
 
-[I am not able to run SASS into my create-react-app](https://github.com/michaelwayman/node-sass-chokidar/issues/14)
+[I am not able to run SASS into my create-react-app](https://github.com/michaelwayman/node-sass-chokidar/issues/14).
 
-[change files throw error status 3](https://github.com/michaelwayman/node-sass-chokidar/issues/22)
+[change files throw error status 3](https://github.com/michaelwayman/node-sass-chokidar/issues/22).
 
-[VSCode won't work with filewatchers](https://stackoverflow.com/questions/50395998/vscode-wont-work-with-filewatchers)
+[VSCode won't work with filewatchers](https://stackoverflow.com/questions/50395998/vscode-wont-work-with-filewatchers).
