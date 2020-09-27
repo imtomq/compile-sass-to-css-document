@@ -66,8 +66,7 @@ Trong phần **Scripts**, chúng ta thêm các lệnh compile SASS sang CSS:
 
 ## Tìm hiểu lệnh React-scripts start
 
-![alt text](https://github.com/ImTomQ/Compile-sass-to-css-document/tree/master/src/assets/img/AgqTe.png)
-
+<img src="https://github.com/ImTomQ/Compile-sass-to-css-document/tree/master/src/assets/img/AgqTe.png" width="24.25%"></img>
 
 
 
