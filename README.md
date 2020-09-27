@@ -1,6 +1,6 @@
 # Compile SASS to CSS
 
-## Install SASS
+## Cài đặt, tìm hiểu và sử dụng gói node-sass
 
 ```bash
 npm install node-sass --save
@@ -21,7 +21,7 @@ npm install --save-dev node-sass
   }
 ```
 
-## Add compile SASS to CSS command in Package.js file
+### Add compile SASS to CSS command in Package.js file
 
 Trong phần **Scripts**, chúng ta thêm lệnh compile SASS sang CSS:
 
@@ -32,7 +32,7 @@ Trong phần **Scripts**, chúng ta thêm lệnh compile SASS sang CSS:
   }
 ```
 
-### Hãy tìm hiểu từng chi tiết một trong dòng code này.
+#### Hãy tìm hiểu từng chi tiết một trong dòng code này.
 
 - ***node-sass***: Là gói gói node-sass.
 - ***--watch***: Một cờ hiệu không bắt buộc có nghĩa là **"giám sát tất cả các tập tin .scss trong thư mục scss/ và biên dịch lại chúng mỗi khi có sự thay đổi."**
@@ -40,11 +40,40 @@ Trong phần **Scripts**, chúng ta thêm lệnh compile SASS sang CSS:
 - ***src/assets/scss/***: Đường dẫn và tên thư mục mà chúng ta đặt tất cả các tập tin .scss của chúng ta.
 - ***-o src/assets/css/***: Đường dẫn và thư mục đầu ra cho CSS đã được biên dịch của chúng ta.
 
-# Fix 'unreadable file error' in watch mode after a save in vscode:
+## Cài đặt, tìm hiểu và sử dụng node-sass-chokidar
 
-  [Link](https://github.com/marcosbozzani/node-sass/blob/bug-vscode-watch/lib/render.js)https://github.com/marcosbozzani/node-sass/blob/bug-vscode-watch/lib/render.js
+Tương tự như **node-sass**:
+
+``` bash
+npm install --save-dev node-sass-chokidar
+```
+
+### Add compile SASS to CSS command in Package.js file
+
+Trong phần **Scripts**, chúng ta thêm các lệnh compile SASS sang CSS:
+
+``` js
+"scripts": {
+  "start": "npm-run-all -p watch-css start-js",
+  "build-css": "node-sass-chokidar --include-path  ./src --include-path ./node_modules src/assets/scss/main.scss -o src/assets/css/main.css",
+  "watch-css": "npm run build-css && node-sass-chokidar --include-path  ./src --include-path ./node_modules src/assets/scss/main.scss -o src/assets/css/main.css -w -r --usePolling --polling-interval 500",
+  "start-js": "react-scripts start",
+  ...
+}
+```
+
+
+
+
+
+
+
+
+
 
 # Tổng hợp những bài viết hướng dẫn fix lỗi
+
+[Fix 'unreadable file error' in watch mode after a save in vscode](https://github.com/marcosbozzani/node-sass/blob/bug-vscode-watch/lib/render.js)
 
 https://github.com/sass/node-sass/issues/1894
 
